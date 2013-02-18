@@ -1,5 +1,14 @@
+/* Assignment 2
+ * part ONE
+ * Purpose: A C program that performs some simple conversions
+ * Author: Steve Beasley
+ *                              */
+ 
+ 
+
 #include <stdio.h>
 
+// main will call whatDo() for as long as the user wants to continue (doesn't input exit/5 at the main menu)
 
 int main(void)
 {
@@ -10,25 +19,27 @@ int main(void)
     return 0;
 }
 
+//Macros for the switch statement in whatDo
+
 #define KILO_POUND 1
 #define LIT_GAL 2
 #define CENT_INCH 3
 #define CEL_FAHR 4
 #define QUIT 5
 
-
+// whatDo is our main menu where the user tells us what he wants to do
 int whatDo()
 {
     printf("What would you like to do? \n\n Input: \n 1 for conversion between Kilogram and Pounds \n 2 for conversion between Litre and Gallon (liquid gallon or US gallon) \n 3 for conversion between Centimetre and Inch \n 4 for conversion between Celsius and Fahrenheit \n 5 to quit \n Enter selection: ");
     int i;
 
-    char n; //Used to clear input
+    char n;          //Used to clear input
 
-    scanf("%d", &i);
+    scanf("%d", &i); // Reads the user input
 
-    scanf("%c", &n);
+    scanf("%c", &n); //collects the end of line character so it doesn't mess up further scanf calls
 
-    switch (i)
+    switch (i)       //Figures out what the user wants to do and then does it.
     {
         case QUIT:
             return 1;
@@ -44,12 +55,13 @@ int whatDo()
         case CEL_FAHR:
             celFahr();
             break;
-        default:
+        default:   //If the user does not put in 1-5 as their input the program will print this statement then go back to the main menu
             printf("Invalid selection. Try again.");
     }
     return 0;
 }
 
+//getConv asks the number that the user wants converted and then returns that number.
 
 float getConv() 
 { 
@@ -60,13 +72,13 @@ float getConv()
 }
 
 
-
+//kiloPound asks which way the user wants to convert and then does it, printing the results to the screen and then returns to the main menu.
 int kiloPound() 
 { 
     printf("What would you like to do? \n\n Input: \n K for conversion from Kilogram to Pound \n P for conversion from Pound to Kilogram \n Enter selection: "); 
     char choice; 
-    scanf("%c", &choice); 
-    switch (choice) 
+    scanf("%c", &choice);   //get the user's input 
+    switch (choice)         //checks what the user wants to do then does it
     { 
         case 'K': 
             kiloToPound(); 
@@ -74,7 +86,7 @@ int kiloPound()
         case 'P': 
             poundToKilo(); 
             break; 
-        default: 
+        default:            //If the user inputs an incorrect value the program will print an error statement and then ask again.
             printf("Invalid input, try again \n"); 
             kiloPound();
     } 
@@ -82,7 +94,9 @@ int kiloPound()
 } 
 
 
-#define MASS_SCALE_FACTOR 2.20462
+//kiloToPound and poundToKilo call getConv and then convert the returned value accordingly and prints the results neatly to the screen.
+
+#define MASS_SCALE_FACTOR 2.20462 //Scale factor for conversion of Mass
 
 int kiloToPound()
 {

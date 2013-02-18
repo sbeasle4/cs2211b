@@ -1,0 +1,36 @@
+Script started on Sun Feb 17 19:19:10 2013
+ obelix:~/courses/cs2211b/assignments/asn2> pwd
+/student/sbeasle4/courses/cs2211b/assignments/asn2
+ obelix:~/courses/cs2211b/assignments/asn2> date
+Sun Feb 17 19:19:14 EST 2013
+ obelix:~/courses/cs2211b/assignments/asn2> whoami
+sbeasle4
+ obelix:~/courses/cs2211b/assignments/asn2> ls -lt
+total 13
+-rw------- 1 sbeasle4 2ndyr    0 Feb 17 19:18 scriptTwo
+-rw------- 1 sbeasle4 2ndyr  475 Feb 17 19:15 two.c
+-rw------- 1 sbeasle4 2ndyr 5636 Feb 17 19:00 oneScript
+-rw------- 1 sbeasle4 2ndyr 4593 Feb 17 18:55 one.c
+ obelix:~/courses/cs2211b/assignments/asn2> gcc -g two.c -o two
+ obelix:~/courses/cs2211b/assignments/asn2> two
+What is the base? : 1
+What is the exponent? : 100
+Result: 1.00
+ obelix:~/courses/cs2211b/assignments/asn2> two
+What is the base? : 2
+What is the exponent? : 0
+Result: 1.00
+ obelix:~/courses/cs2211b/assignments/asn2> 15
+15: Command not found.
+ obelix:~/courses/cs2211b/assignments/asn2> two
+What is the base? : 4
+What is the exponent? : 2
+Result: 16.00
+ obelix:~/courses/cs2211b/assignments/asn2> two
+What is the base? : 17
+What is the exponent? : 24
+Result: 339448651828744145348652433408.00
+ obelix:~/courses/cs2211b/assignments/asn2> exit
+exit
+
+script done on Sun Feb 17 19:25:18 2013

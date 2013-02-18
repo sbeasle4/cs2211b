@@ -1,0 +1,186 @@
+Script started on Sun Feb 17 18:58:26 2013
+ obelix:~/courses/cs2211b/assignments/asn2> pwd
+/student/sbeasle4/courses/cs2211b/assignments/asn2
+ obelix:~/courses/cs2211b/assignments/asn2> date
+Sun Feb 17 18:58:29 EST 2013
+ obelix:~/courses/cs2211b/assignments/asn2> whoami
+sbeasle4
+ obelix:~/courses/cs2211b/assignments/asn2> ls -lt
+total 22
+-rw------- 1 sbeasle4 2ndyr     0 Feb 17 18:58 scriptOne
+-rwx------ 1 sbeasle4 2ndyr 14496 Feb 17 18:56 a.out
+-rw------- 1 sbeasle4 2ndyr  4593 Feb 17 18:55 one.c
+-rw------- 1 sbeasle4 2ndyr   437 Feb 17 18:50 two.c
+ obelix:~/courses/cs2211b/assignments/asn2> gcc -g one.c -o one
+ obelix:~/courses/cs2211b/assignments/asn2> one
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 0
+Invalid selection. Try again.What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 1
+What would you like to do? 
+
+ Input: 
+ K for conversion from Kilogram to Pound 
+ P for conversion from Pound to Kilogram 
+ Enter selection: K
+What would you like converted: 50
+Pound equivalent: 110.23
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 1
+What would you like to do? 
+
+ Input: 
+ K for conversion from Kilogram to Pound 
+ P for conversion from Pound to Kilogram 
+ Enter selection: J
+Invalid input, try again 
+What would you like to do? 
+
+ Input: 
+ K for conversion from Kilogram to Pound 
+ P for conversion from Pound to Kilogram 
+ Enter selection: Invalid input, try again 
+What would you like to do? 
+
+ Input: 
+ K for conversion from Kilogram to Pound 
+ P for conversion from Pound to Kilogram 
+ Enter selection: P
+What would you like converted: 110.23
+Kilogram equivalent: 50.00
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 2
+What would you like to do? 
+
+ Input: 
+ L for conversion from Litre to gallon 
+ G for conversion from gallon to Litre 
+ Enter selection: L
+What would you like converted: 15
+Gallon equivalent: 56.78
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 2
+What would you like to do? 
+
+ Input: 
+ L for conversion from Litre to gallon 
+ G for conversion from gallon to Litre 
+ Enter selection: G
+What would you like converted: 56.78
+Liter equivalent: 15.00
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 3
+What would you like to do? 
+
+ Input: 
+ C for conversion from Centimetre to Inch 
+ I for conversion from Inch to Centimetre 
+ Enter selection: C
+What would you like converted: 7
+Inch equivalent: 2.76
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 3
+What would you like to do? 
+
+ Input: 
+ C for conversion from Centimetre to Inch 
+ I for conversion from Inch to Centimetre 
+ Enter selection: I
+What would you like converted: 2.76
+Centimetre equivalent: 7.01
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 4
+What would you like to do? 
+
+ Input: 
+ C for conversion from Celsius to Fahrenheit 
+ F for conversion from Fahrenheit to Celsius 
+ Enter selection: C
+What would you like converted: 100
+Fahrenheit equivalent: 212.0
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 4
+What would you like to do? 
+
+ Input: 
+ C for conversion from Celsius to Fahrenheit 
+ F for conversion from Fahrenheit to Celsius 
+ Enter selection: F
+What would you like converted: 32
+Celsius equivalent: 0.0
+What would you like to do? 
+
+ Input: 
+ 1 for conversion between Kilogram and Pounds 
+ 2 for conversion between Litre and Gallon (liquid gallon or US gallon) 
+ 3 for conversion between Centimetre and Inch 
+ 4 for conversion between Celsius and Fahrenheit 
+ 5 to quit 
+ Enter selection: 5
+ obelix:~/courses/cs2211b/assignments/asn2> exit
+exit
+
+script done on Sun Feb 17 19:00:22 2013

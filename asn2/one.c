@@ -112,13 +112,13 @@ int poundToKilo()
     return 0; 
 }
 
-
+//kitGal  asks which way the user wants to convert and then does it, printing the results to the screen and then returns to the main menu.
 int litGal() 
 { 
     printf("What would you like to do? \n\n Input: \n L for conversion from Litre to gallon \n G for conversion from gallon to Litre \n Enter selection: "); 
     char choice; 
-    scanf("%c", &choice); 
-    switch (choice) 
+    scanf("%c", &choice); //get the user's input
+    switch (choice)       //checks what the user wants and then does it
     { 
         case 'L': 
             litToGal(); 
@@ -126,7 +126,7 @@ int litGal()
         case 'G': 
             galToLit(); 
             break; 
-        default: 
+        default:          //If the user inputs an incorrect value the program will print an error statement and then ask again.
             printf("Invalid input, try again \n"); 
             litGal();
     } 
@@ -134,8 +134,10 @@ int litGal()
 } 
 
 
+//litToGal and galToLit call getConv and then convert the returned value accordingly and prints the results neatly to the screen.
 
-#define VOLUME_SCALE_FACTOR 3.78541
+
+#define VOLUME_SCALE_FACTOR 3.78541 //Scale factor for conversion of Volume
 
 int litToGal()
 {
@@ -151,12 +153,15 @@ int galToLit()
     return 0; 
 } 
 
+
+//centInch asks which way the user wants to convert and then does it, printing the results to the screen and then returns to the main menu.
+
 int centInch() 
 { 
     printf("What would you like to do? \n\n Input: \n C for conversion from Centimetre to Inch \n I for conversion from Inch to Centimetre \n Enter selection: "); 
     char choice; 
-    scanf("%c", &choice); 
-    switch (choice) 
+    scanf("%c", &choice);    //get the user's input
+    switch (choice)          //checks what the user wants to do then does it
     { 
         case 'C': 
             centToInch(); 
@@ -164,15 +169,17 @@ int centInch()
         case 'I': 
             inchToCent(); 
             break; 
-        default: 
+        default:             ////If the user inputs an incorrect value the program will print an error statement and then ask again.
             printf("Invalid input, try again \n"); 
             centInch();
     } 
     return 0; 
 } 
 
+//centToInch and inchToCent call getConv and then convert the returned value accordingly and prints the results neatly to the screen.
 
-#define CENT_SCALE_FACTOR 0.393700787 
+
+#define CENT_SCALE_FACTOR 0.393700787 //Scale factor to convert centimeter to inches
 
 int centToInch()
 {
@@ -182,7 +189,7 @@ int centToInch()
 } 
 
 
-#define INCH_SCALE_FACTOR 2.54 
+#define INCH_SCALE_FACTOR 2.54 //Scale factor to convert inch to centimeter
 
 int inchToCent()
 {
@@ -191,13 +198,17 @@ int inchToCent()
     return 0; 
 } 
 
+
+//celFahr asks which way the user wants to convert and then does it, printing the results to the screen and then returns to the main menu.
+
+
 int celFahr() 
 { 
     printf("What would you like to do? \n\n Input: \n C for conversion from Celsius to Fahrenheit \n F for conversion from Fahrenheit to Celsius \n Enter selection: "); 
     char choice; 
-    scanf("%c", &choice); 
+    scanf("%c", &choice);    //get the user's input 
     
-    switch (choice) 
+    switch (choice)          //checks what the user wants to do then does it
     { 
         case 'C': 
             celToFahr(); 
@@ -205,15 +216,18 @@ int celFahr()
         case 'F': 
             fahrToCel(); 
             break; 
-        default: 
+        default:            //If the user inputs an incorrect value the program will print an error statement and then ask again.
             printf("Invalid input, try again \n"); 
             celFahr();
     } 
     return 0; 
 } 
 
-#define FREEZING_PT 32.0f 
-#define TEMP_SCALE_FACTOR (5.0f / 9.0f) 
+//celToFahr and fahrToCel call getConv and then convert the returned value accordingly and prints the results neatly to the screen.
+//Lecture notes Chapter 2: C Fundamentals slide 49 was used to help write this section
+
+#define FREEZING_PT 32.0f               //Freezing point (in fahrenheit) used in the conversion of temperature
+#define TEMP_SCALE_FACTOR (5.0f / 9.0f) //Scale factor used in the conversion of temperature
 
 int celToFahr()
 {
